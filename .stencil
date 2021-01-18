@@ -1,0 +1,11 @@
+{
+  "normalStoreUrl": "https://www.modaselle.com",
+  "accessToken": "i55nodtanul7ya8d4obzoxokjmi07yw",
+  "port": 3000,
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}
