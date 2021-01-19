@@ -1,0 +1,356 @@
+.alert-list {
+    font-size: 16px;
+    margin-top: 2rem;
+
+}
+
+#advisory-note {
+    font-size: 14px !important;
+    color: #666;
+    font-style: italic;
+    margin-top: 1em;
+}
+
+/** We hide the price section on individual product pages and then show them if they're not
+ sold out. We do it this way so that we don't get the price flashing when a sold out product is 
+ loading **/ 
+.productView .price-section {
+    display: none;
+}
+
+//Hides the "out of stock" flag on the product pages
+
+.productView-images .sale-flag-side {
+    display:none;
+}
+
+//fixes the z-index issue in Shopping Cart preview drop down on Firefox
+
+.navPages-container {
+
+    z-index: 0;
+}
+
+//fixes the z-index issue on sold out flag in mobile
+.sale-flag-side--outstock {
+    z-index: 5;
+}
+
+//Prettyfies the "sold out" text on product pages
+.alertBox--error {
+    background-color: transparent;
+    color: #000;
+
+}
+
+.alertBox-icon{
+    display: none;
+}
+
+.alertBox {
+    font-size: 2rem;
+    padding: 0;
+}
+
+
+//retail price moved to main description area
+
+.productView-original-retail {
+    font-size: 1.2rem;
+    font-weight: 400;
+ 
+}
+
+//top promo banner bar 
+.banners {
+    padding: 0.1rem 0;
+}
+
+.upperbanner {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    }
+
+//side filters
+
+.navList-action--checkbox {
+    margin-bottom: 0rem;
+}
+
+.toggleLink-text {
+    margin-top: 10px;
+}
+
+
+//store hours
+#hours {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+#hours td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+#hours th {
+  text-align: center;
+  padding: 2px;
+}
+
+#hours tr:nth-child(even){background-color: #f2f2f2;}
+
+#hours th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+}
+
+.update-alert {
+  text-align: center;
+  color:red;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 10px;
+}
+
+.heroCarousel.slick-dotted.slick-slider {
+    margin-bottom: 15px;
+}
+
+
+  .productView-bulkPricing-inner, .productView-alsoBought, .productView-properties, .productView-addition, .productView-warranty, .productView-reviews, .productView-desc, .productView-videos, .productView-productsList, .productView-options {
+    margin-top: 0.3rem;
+}
+
+//emailmeform
+
+/* -- Logo -- */
+
+#emf-container #emf-logo a /* logo image */
+{
+  background-repeat:no-repeat;
+  text-indent:-99999px;
+  background-image: none;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+
+/* -- Backgrounds -- */
+
+body /* wallpaper */
+{
+  background-image: none; 
+  background-color: #ffffff;
+}
+
+#emf-container #emf-logo /* header */
+{
+  background-image: none;
+  background-color: #ffffff;
+}
+
+#emf-container /* form */
+{
+  background-color: #ffffff;
+}
+
+#emf-container div.emf-div-field input, /* field */
+#emf-container div.emf-div-field textarea,
+#emf-container div.emf-div-field select
+{
+  outline: none;
+ 
+}
+
+#emf-container #emf-form ul li.highlight-field /* highlight*/
+{
+  background-color: #ffffff;
+}
+
+
+#emf-container li .emf-div-instruction, #emf-container li .emf-div-field label /* instructions */
+{
+  background-color: none;
+}
+
+
+/* -- Typography -- */
+
+#emf-container #emf-form-title /* title */
+{
+  font-family: Lato;
+  font-style: normal;
+  font-size: 20px;
+  color: #3f3f3f;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+#emf-container #emf-form-description /* description */
+{
+  font-family: Lato;
+  font-style: normal;
+  font-size: 15px;
+  color: #3f3f3f;
+}
+
+#emf-container label.emf-label-desc /* field title */
+{
+  font-family: Lato;
+  font-style: normal;
+  font-size: 15px;
+  color: #3f3f3f;
+  letter-spacing: 1px;
+}
+
+#emf-container div.emf-div-field input, /* field text */
+#emf-container div.emf-div-field textarea,
+#emf-container div.emf-div-field select
+{
+  font-family: Lato;
+  font-style: normal;
+  font-size: 16px;
+  color: #555;
+     /*width: 100%; */
+    padding: 10px 18px;
+    margin: 2px 0;
+    box-sizing: border-box;
+   border: 1px solid;
+    border-color: #c6c6c6;
+    border-radius: 1px;
+
+}
+
+#emf-container li .emf-div-instruction, #emf-container li .emf-div-field label /* instructions */
+{
+  font-family: Lato;
+  font-style: italic;
+  font-size: 15px;
+  color: c6c6c6;
+}
+
+
+/* -- Borders -- */
+
+#emf-container /* form */
+{ 
+  border-top: 0px ; 
+  border-right: 0px ;
+  border-bottom: 0px ;
+  border-left: 0px ; 
+}
+
+#emf-container #emf-logo /* header */
+{
+  -moz-border-radius:2px 2px 0 0;
+  -webkit-border-radius:2px 2px 0 0;
+}
+
+/* -- Shadows -- */
+
+#emf-container-outer #emf-form-shadows /* bottom shadow image */
+{
+  display:block;
+  margin:0 auto;
+  height:9px;
+  width:640px;
+  border:medium none;
+  visibility: hidden;
+}
+
+/* -- Separator Lines -- */
+
+#emf-container .emf-head-widget, #emf-container li .emf-section-separator{
+ border-bottom-style: solid;
+  border-color: #c6c6c6;
+}
+
+/* -- Section Title -- */
+
+#emf-container li.emf-field-section_break div.emf-div-field-section h3{
+    font-size:16px;
+}
+
+/* -- Section Text -- */
+
+#emf-container li.emf-field-section_break .emf-section-text{
+  font-family: Arial;
+  font-style: normal;
+  font-size: 13px;
+  color: #919191;
+}
+
+/* -- Buttons -- */
+
+#emf-container .emf-action-next /* next button */
+{
+
+}
+
+#emf-container .emf-action-previous /* previous button */
+{
+    
+}
+
+#emf-container #submit-form /* submit button */
+{
+  
+    
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+ 
+}
+
+
+/* -- Error message -- */
+
+#emf-container .emf-error-message
+{
+  margin: 10px;
+  padding: 10px;
+  border: 1px dashed #FF0000;
+}
+
+//end emailmeform
+
+/* removing menu chevron and fix spacing */
+
+.navPages-action-moreIcon {
+    display: none;
+}
+.header-main-container--top .navPages-list > .navPages-item > .navPages-action {
+    padding: 0.78571rem 1rem;
+}
+
+//Makes one menu item red and adds icon
+
+.navPages-item .navPages-action[href*="todays-flash-sales/"] {
+    color: #FF4136;
+}
+
+//Modifies Sold Out Banner
+.sale-flag-side--outstock {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    transform: rotate(-30deg);
+    left: 0px;
+
+   .product:hover & {
+        background-color: rgba(0, 0, 0, 0.5);    
+    }
+}
+
