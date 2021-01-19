@@ -8,7 +8,7 @@
         "info": "Info",
         "categories": "Categories",
         "accept_payments": "Accepted Payments",
-        "call_us": "Call us at {phone_number}"
+        "call_us": "Call us: {phone_number}"
     },
     "home": {
         "heading": "Home"
@@ -484,10 +484,10 @@
             },
             "products": {
                 "new": {
-                    "heading": "New Products",
+                    "heading": "NEW ARRIVALS",
                     "intro": "The latest products feed contains the latest {limit} products added to {store}.",
-                    "rss": "Latest {limit} New Products (RSS)",
-                    "rss_atom": "Latest {limit} New Products (Atom)"
+                    "rss": "Latest {limit} NEW ARRIVALS (RSS)",
+                    "rss_atom": "Latest {limit} NEW ARRIVALS (Atom)"
                 },
                 "popular": {
                     "heading": "Popular Products",
@@ -695,7 +695,7 @@
         "similar_by_views": "Customers Also Viewed",
         "featured": "Featured Products",
         "file_option_set": "Currently: <a href=\"{url}\" target=\"_blank\">{name}</a>",
-        "new": "New Products",
+        "new": "NEW ARRIVALS",
         "warranty": "Warranty",
         "info": "Info",
         "reviews": {
@@ -803,7 +803,7 @@
     },
     "newsletter": {
         "subscribe": "Subscribe to our newsletter",
-        "subscribe_intro": "Get the latest updates on new products and upcoming sales",
+        "subscribe_intro": "Get the latest updates on NEW ARRIVALS and upcoming sales",
         "subscribe_submit": "Subscribe",
         "email_placeholder": "Your email address",
         "subscribed_heading": "Thanks for Subscribing!",

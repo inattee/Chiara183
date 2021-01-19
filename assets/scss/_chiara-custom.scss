@@ -359,5 +359,26 @@ body /* wallpaper */
     display: none;
   }
 
-  
+//filter menu customizations
+.navList-toggle .icon {
+        background-color: #fff;
+    }
+.navList-action {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
 
+.navList-toggle {
+    padding: 0.2rem;
+
+}
+
+.accordion--navList .accordion-block {
+    margin-top: 1.1rem;
+}
+
+.sidebarBlock-heading { 
+  &:after {
+        border-bottom: 1px solid #675678;
+    }
+}
