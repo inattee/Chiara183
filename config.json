@@ -566,7 +566,7 @@
     "topBanner-bgColor": "#131313",
     "topBanner-color": "#ffffff",
     "topBanner-color-link": "#ffffff",
-    "bottomBar": "bottom",
+    "bottomBar": "top",
     "bottomBar-bgColor": "#ffffff",
     "bottomBar-color": "#131313",
     "bottomBar-color-active": "#675678",
