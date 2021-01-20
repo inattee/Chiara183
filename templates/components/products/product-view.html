@@ -475,9 +475,9 @@
         {{#if theme_settings.productpage_properties_tab}}
         <li class="productView-tab productView-tab--properties{{#unless theme_settings.productpage_description_tab}} is-active{{/unless}}"><a class="productView-tab-title" href="#product-tab-properties-{{product.id}}">{{lang 'products.info'}}</a></li>
         {{/if}}
-        {{#if product.warranty}}
+        <!--{{#if product.warranty}}
             <li class="productView-tab productView-tab--warranty"><a class="productView-tab-title" href="#product-tab-warranty-{{product.id}}">{{lang 'products.warranty'}}</a></li>
-        {{/if}}
+        {{/if}}-->
         {{#and theme_settings.productpage_custom_fields_tab product.custom_fields_count}}
             <li class="productView-tab productView-tab--addition"><a class="productView-tab-title" href="#product-tab-addition-{{product.id}}">{{theme_settings.productpage_custom_fields_tab_heading}}</a></li>
         {{/and}}
@@ -606,7 +606,7 @@
         </div>
     </section>
 
-    {{#if product.warranty}}
+   <!-- {{#if product.warranty}}
     <section class="productView-warranty productView-warranty--{{theme_settings.productpage_tabs_type}} productView-tab-content" id="product-tab-warranty-{{product.id}}">
         <div class="productView-warranty-heading-toggle" 
             data-collapsible="productView-warranty-{{product.id}}" 
@@ -625,7 +625,7 @@
             </div>
         </div>
     </section>
-    {{/if}}
+    {{/if}} -->
 
     {{#and theme_settings.productpage_custom_fields_tab product.custom_fields_count}}
     <section class="productView-addition productView-addition--{{theme_settings.productpage_tabs_type}} productView-tab-content" id="product-tab-addition-{{product.id}}">
