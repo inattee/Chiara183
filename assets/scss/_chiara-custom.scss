@@ -71,16 +71,6 @@
     letter-spacing: 1px;
     }
 
-//side filters
-
-.navList-action--checkbox {
-    margin-bottom: 0rem;
-}
-
-.toggleLink-text {
-    margin-top: 10px;
-}
-
 
 //store hours
 #hours {
@@ -381,4 +371,24 @@ body /* wallpaper */
   &:after {
         border-bottom: 1px solid #675678;
     }
+}
+
+.navList-action--checkbox {
+    margin-bottom: 0rem;
+}
+
+.toggleLink-text {
+    margin-top: 10px;
+}
+
+//Menu Customizations
+.navPages-action {
+
+    @include breakpoint("medium") {
+        padding-top: spacing("quarter");
+        padding-bottom: spacing("quarter");
+    }
+  }
+.navPage-subMenu-item-child .navPage-subMenu-action, .navPage-subMenu-item-parent .navPage-subMenu-action {
+text-transform: none;
 }
