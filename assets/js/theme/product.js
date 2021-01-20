@@ -1,6 +1,7 @@
 /*
  Import all product specific js
  */
+import { hidePrice } from './product/natalie';
 import PageManager from './page-manager';
 import Review from './product/reviews';
 import collapsibleFactory from './common/collapsible';

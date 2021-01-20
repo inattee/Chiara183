@@ -440,6 +440,9 @@
                         {{else}}
                             {{>components/common/alert-error (lang 'products.sold_out')}}
                         {{/if}}
+                        <div class="form-action">
+                            <a href="/custom-item-alerts/" class="button button--primary">Create an Alert</a>
+                        </div>                        
                     {{/if}}
     
                     {{#if theme_settings.bannerAfterAddToCartButton '===' 'all'}}
