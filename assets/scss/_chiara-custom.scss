@@ -392,3 +392,21 @@ body /* wallpaper */
 .navPage-subMenu-item-child .navPage-subMenu-action, .navPage-subMenu-item-parent .navPage-subMenu-action {
 text-transform: none;
 }
+
+//Removes quantity box from shopping cart
+.cart-header-quantity,
+.cart-item-quantity {
+
+    @include breakpoint("medium") {
+        display: none;
+    }
+}
+//Fixes white on white hover text in the cancel button on the remove item popup.
+
+.swal2-modal {
+
+    .swal2-cancel:focus,
+    .swal2-cancel:hover {
+        color: #000;
+    }
+  }
