@@ -1,13 +1,15 @@
 {
     "header": {
-        "welcome_back": "Welcome back, {name}"
+        "welcome_back": "Welcome back, {name}",
+        "promo_text": "Free shipping in Canada | <strong>New Arrivals daily at 12pm PST </strong> | ",
+        "shop_new": "SHOP NEW ARRIVALS"
     },
     "footer": {
         "brands": "Shop by Brands",
         "navigate": "Navigate",
         "info": "Info",
         "categories": "Categories",
-        "accept_payments": "Accepted Payments",
+        "accept_payments": "Accept Payments",
         "call_us": "Call us: {phone_number}"
     },
     "home": {
@@ -16,8 +18,7 @@
     "blog": {
         "recent_posts": "Recent Posts",
         "label": "Blog",
-        "posted_by": "Posted by {name}",
-        "read_more": "read more"
+        "posted_by": "Posted by {name}"
     },
     "unavailable": {
         "hibernation_title": "We'll be back",
@@ -118,12 +119,12 @@
             "preview": "Preview"
         },
         "added_to_cart": {
-            "what_next": "Ok, {num_products, plural, one {1 item was} other {# items were}} added to your cart. What's next?",
+            "what_next": "Item added to your shopping bag.",
             "your_cart_contains": "Your cart contains {num_products, plural, one {1 item} other {# items}}",
             "proceed_to_checkout": "Proceed to checkout",
             "order_subtotal": "Order subtotal",
             "continue_shopping": "Continue Shopping",
-            "view_or_edit_cart": "View or edit your cart",
+            "view_or_edit_cart": "View or edit your shopping cart",
             "you_might_also_like": "You may also like",
             "auto_close": "Auto close after <span class='count'></span>s"
         }
@@ -133,7 +134,6 @@
         "store_credit_overview": "{credit} Store Credit",
         "generic_error": "Oops! Something went wrong.",
         "currency": "{code}",
-        "currency_switch_promotion" : "Promotions and gift certificates that don't apply to the new currency will be removed from your cart. Are you sure you want to continue?",
         "newsletter_signup": "Register for our newsletter",
         "form_submit": "Submit",
         "no_preference": "No Preference",
@@ -403,7 +403,6 @@
         },
         "returns": {
             "heading": "Returns",
-            "instructions": "Return Instructions",
             "error_no_qty": "Please select one or more items to return.",
             "none": "You haven't placed any returns with us. When you do, they will appear on this page.",
             "new_return": "New Return",
@@ -484,10 +483,10 @@
             },
             "products": {
                 "new": {
-                    "heading": "NEW ARRIVALS",
+                    "heading": "New Arrivals",
                     "intro": "The latest products feed contains the latest {limit} products added to {store}.",
-                    "rss": "Latest {limit} NEW ARRIVALS (RSS)",
-                    "rss_atom": "Latest {limit} NEW ARRIVALS (Atom)"
+                    "rss": "Latest {limit} New Arrivals (RSS)",
+                    "rss_atom": "Latest {limit} New Arrivals (Atom)"
                 },
                 "popular": {
                     "heading": "Popular Products",
@@ -617,7 +616,7 @@
             },
             "categories": "Categories",
             "did_you_mean": "Did you mean:",
-            "your_search_for": "Your search for",
+            "your_search_for": "Sorry! Unfortunately your search for",
             "no_match": "did not match any products or information.",
             "suggestions": {
                 "title": "Suggestions:",
@@ -695,7 +694,7 @@
         "similar_by_views": "Customers Also Viewed",
         "featured": "Featured Products",
         "file_option_set": "Currently: <a href=\"{url}\" target=\"_blank\">{name}</a>",
-        "new": "NEW ARRIVALS",
+        "new": "New Arrivals",
         "warranty": "Warranty",
         "info": "Info",
         "reviews": {
@@ -739,7 +738,7 @@
         "upc": "UPC:",
         "mpn": "MPN:",
         "condition": "Condition:",
-        "availability": "Availability:",
+        "availability": "Original Retail Price:",
         "shipping": "Shipping:",
         "shipping_fixed": "{amount} (Fixed Shipping Cost)",
         "shipping_free": "Free Shipping",
@@ -803,7 +802,7 @@
     },
     "newsletter": {
         "subscribe": "Subscribe to our newsletter",
-        "subscribe_intro": "Get the latest updates on NEW ARRIVALS and upcoming sales",
+        "subscribe_intro": "Get the latest updates on new products and upcoming sales",
         "subscribe_submit": "Subscribe",
         "email_placeholder": "Your email address",
         "subscribed_heading": "Thanks for Subscribing!",
@@ -815,6 +814,8 @@
     "social": {
         "connect": "Connect With Us"
     },
+
+
     "errors": {
         "shipping_quote_failure": "There was a problem retrieving your shipping quote",
         "state_error": "There was a problem retrieving states/provinces"
@@ -828,7 +829,7 @@
         "results": {
             "form_label": "Search Keyword:",
             "form_button_text": "Search",
-            "count": "{ count, plural, one {# result} other {# results} } for '{ search_query }'",
+            "count": "All results for '{ search_query }'",
             "quick_count": "{ count, plural, one {# product result} other {# product results} } for '{ search_query }'",
             "product_count": "Products <span class='count'>{count}</span>",
             "content_count": "News & Information <span class='count'>{count}</span>"
@@ -1087,12 +1088,12 @@
         },
         "order_confirmation": {
             "order_number_text": "Your order number is <strong>{orderNumber}</strong>",
-            "order_pending_review_text": "Your order was sent to us but is currently awaiting payment. Once we receive the payment for your order, it will be completed. If you've already provided payment details then we will process your order manually and send you an email when it's completed.",
+            "order_pending_review_text": "Thank you for your purchase. All orders are generally processed within 1 business day. Once your order has been shipped, we will send you an email with your tracking information so you can follow its progress. If you have any questions regarding your order, please contact us at 1-800-337-4056 or customercare@modaselle.com.",
             "order_with_downloadable_digital_items_text": "You can download your digital purchases by clicking the links on this page, or by logging into your account at any time. There is also a download link in your confirmation email, which should be arriving shortly.",
-            "order_with_support_number_text": "An email will be sent containing information about your purchase. If you have any questions about your purchase, email us at <a ng-href=\"mailto:{supportEmail}?Subject=Order {orderNumber}\" target=\"_top\">{supportEmail}</a> or call us at <a href=\"tel://{supportPhoneNumber}\">{supportPhoneNumber}</a>.",
+            "order_with_support_number_text": "Thank you for your purchase. All orders are generally processed within 1 business day. Once your order has been shipped, we will send you an email with your tracking information so you can follow its progress. </br> </br>If you have any questions regarding your order, please contact us at <a ng-href=\"mailto:{supportEmail}?Subject=Order {orderNumber}\" target=\"_top\">{supportEmail}</a> or call us at <a href=\"tel://{supportPhoneNumber}\">{supportPhoneNumber}</a>.",
             "order_without_downloadable_digital_items_text": "Once we receive your payment, we’ll send a confirmation email with a link to download your digital purchases.",
-            "order_without_support_number_text": "An email will be sent containing information about your purchase. If you have any questions about your purchase, email us at <a ng-href=\"mailto:{supportEmail}?Subject=Order {orderNumber}\" target=\"_top\">{supportEmail}</a>.",
-            "thank_you_customer_heading": "Thank you {name}!",
+            "order_without_support_number_text": "Thank you for your purchase. All orders are generally processed within 1 business day. Once your order has been shipped, we will send you an email with your tracking information so you can follow its progress.",
+            "thank_you_customer_heading": "Thank you, {name}!",
             "thank_you_heading": "Thank you!",
             "order_status_update_facebook_messenger_heading": "Get instant updates of your order to Messenger"
         }
@@ -1104,11 +1105,13 @@
         "contact": "Contact",
         "more": "More"
     },
-    "also_bought": {
+
+
+  "also_bought": {
         "heading": "Frequently Bought Together:",
         "add_all": "Select all",
         "add_selected_to_cart": "Add %str% to cart",
-        "all": "all",
+        "all": "Select all",
         "number_array": ",both,three,four,five,six,seven,eight,nine,ten",
         "all_number_array": "all,all two,all three,all four,all five,all six,all seven,all eight,all nine,all ten"
     }
