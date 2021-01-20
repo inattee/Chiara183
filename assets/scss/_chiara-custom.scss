@@ -410,3 +410,40 @@ text-transform: none;
         color: #000;
     }
   }
+
+  //removes animation and icons in alerts
+
+.swal2-show {
+    animation: false;
+}
+
+.swal2-icon {
+    display: none !important;
+}
+
+//hides buy now button
+
+.button--buyNow {
+  display: none;
+}
+
+//styles footer a bit
+
+    .footer-info-col--newsletter + & {
+        margin-top: spacing("half");
+
+        @include breakpoint("medium") {
+            margin-top: spacing("half") + spacing("half");
+        }
+    }
+
+    .footer-info-col--address {
+    width: 100%;
+            li + li {
+               margin-top: 0 !important;
+               padding: 0 !important;
+            }
+
+    }
+
+

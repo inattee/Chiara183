@@ -293,10 +293,10 @@
     }
 
     .footer-info-col--newsletter + & {
-        margin-top: spacing("single") !important;
+        margin-top: spacing("single");
 
         @include breakpoint("medium") {
-            margin-top: spacing("single") + spacing("half") !important;
+            margin-top: spacing("single") + spacing("half");
         }
     }
 
