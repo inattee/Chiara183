@@ -1,6 +1,6 @@
 /*
- Import all product specific js
- */
+ Import all product specific js*/
+ 
 import { hidePrice } from './product/natalie';
 import PageManager from './page-manager';
 import Review from './product/reviews';
@@ -18,6 +18,7 @@ export default class Product extends PageManager {
     }
 
     onReady() {
+        hidePrice();
         // Listen for foundation modal close events to sanitize URL after review.
         $(document).on('close.fndtn.reveal', () => {
             if (this.url.indexOf('#write_review') !== -1 && typeof window.history.replaceState === 'function') {
