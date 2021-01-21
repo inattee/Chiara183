@@ -22,13 +22,17 @@
         {{/if}}
     {{/each}}
 
-    <section class="productView-details">
-
-        
+<section class="productView-details">
         <div class="productView-priceShareWrapper">
             <div class="productView-price">
+            <div class="productView-original-retail">
+                       {{#if product.availability}}
+                        {{lang 'products.availability'}} <s>$ {{product.availability}}</s>
+                    {{/if}}
+</div>
+                
                 {{#if product.call_for_price}}
-                    <span class="price price--call">{{product.call_for_price}}</span>
+                    <span class="price--call">{{product.call_for_price}}</span>
                 {{else}}
                     {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
                         {{> components/products/price price=product.price schema_org=schema}}
@@ -55,8 +59,8 @@
                 </div>
             </div>
         </div>
-        {{{region name="product_below_price--global"}}}
-        {{{region name="product_below_price"}}}
+       <!-- {{{region name="product_below_price--global"}}}
+        {{{region name="product_below_price"}}} -->
 
         <h1 class="productView-title" {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>
 
@@ -260,14 +264,12 @@
                     webkitAllowFullScreen
                     mozallowfullscreen
                     allowFullScreen
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     src="//www.youtube.com/embed/{{product.videos.featured.id}}">
                 </iframe>
             </div>
         </div>
         {{/if}}
         {{/if}}
-
         {{#if theme_settings.product_outstock_badge}}
             {{#if product.out_of_stock}}
                 <div class="sale-flag-side sale-flag-side--outstock">
@@ -355,8 +357,8 @@
         </a>
 
         <div class="productView-options-content" id="productView-options-{{product.id}}">
-            <h4 class="productView-options-panel-heading">{{lang 'products.options'}}</h4>
-            <a class="mobile-panel-close" data-collapsible="productView-options-{{product.id}}" data-group-collapsible="main"><svg><use xlink:href="#icon-close" /></svg></a>
+       <!--     <h4 class="productView-options-panel-heading">{{lang 'products.options'}}</h4>
+            <a class="mobile-panel-close" data-collapsible="productView-options-{{product.id}}" data-group-collapsible="main"><svg><use xlink:href="#icon-close" /></svg></a> -->
 
             <form class="form form--addToCart" method="post" action="{{product.cart_url}}" enctype="multipart/form-data" data-cart-item-add>
                 <div class="productView-options-panel-body" data-lock-body-scroll>
@@ -690,7 +692,7 @@
     <section class="productView-desc {{#if theme_settings.productpage_description_tab}}productView-desc--{{theme_settings.productpage_tabs_type}} productView-tab-content is-active{{else}}productView-desc--{{theme_settings.productpage_description_type}}{{/if}}" id="product-tab-desc-{{product.id}}">
         <h3 class="productView-desc-heading">{{lang 'products.description'}}</h3>
         <div class="productView-desc-content"{{#if schema}} itemprop="description"{{/if}}>
-            {{{product.description}}}
+            {{{product.description}}} {{> components/products/advisory-note}}
             {{{snippet 'product_description'}}}
         </div>
     </section>
