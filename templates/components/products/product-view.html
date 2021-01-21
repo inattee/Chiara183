@@ -32,7 +32,7 @@
 </div>
                 
                 {{#if product.call_for_price}}
-                    <span class="price--call">{{product.call_for_price}}</span>
+                    <span class="price price--call">{{product.call_for_price}}</span>
                 {{else}}
                     {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
                         {{> components/products/price price=product.price schema_org=schema}}
@@ -264,6 +264,7 @@
                     webkitAllowFullScreen
                     mozallowfullscreen
                     allowFullScreen
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     src="//www.youtube.com/embed/{{product.videos.featured.id}}">
                 </iframe>
             </div>
