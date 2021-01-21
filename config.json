@@ -99,6 +99,7 @@
     "fb_page": "https://facebook.com/modaselle",
     "product_list_display_mode": "grid",
     "product_list_columns": 3,
+    "product_list_columns_na": 4,
     "logo-position": "top",
     "logo_size": "250x50",
     "logo-fontSize": "28",
